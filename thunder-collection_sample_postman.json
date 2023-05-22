@@ -1,0 +1,122 @@
+{
+    "info": {
+        "name": "sample",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "http://localhost:8081/v1/user/playersTeam Copy",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8080/catalogue",
+                    "path": [
+                        "catalogue"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                },
+                "header": [
+                    {
+                        "key": "cache-control",
+                        "value": "no-cache"
+                    },
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "postman-token",
+                        "value": "facf9dbd-f488-7db9-516d-48a33a0c0542"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "http://localhost:8081/v1/user/playersTeam Copy",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:8080/order",
+                    "path": [
+                        "order"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                },
+                "header": [
+                    {
+                        "key": "cache-control",
+                        "value": "no-cache"
+                    },
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "postman-token",
+                        "value": "facf9dbd-f488-7db9-516d-48a33a0c0542"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"id\": \"order2\",\n  \"product_id\": \"product1\",\n  \"quantity\": 1\n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8081/v1/user/playersTeam Copy Copy",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:8080/order/order2/status",
+                    "path": [
+                        "order",
+                        "order2",
+                        "status"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                },
+                "header": [
+                    {
+                        "key": "cache-control",
+                        "value": "no-cache"
+                    },
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "postman-token",
+                        "value": "facf9dbd-f488-7db9-516d-48a33a0c0542"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n    \"order_status\": \"Dispatched\",\n    \"dispatch_date\": \"2023-05-22T10:00:00Z\"\n}"
+                }
+            }
+        }
+    ]
+}
